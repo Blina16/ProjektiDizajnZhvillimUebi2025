@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consistent Buttons Example</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .box {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .box i {
+            margin-bottom: 20px;
+        }
+        .box h2 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+        .box p {
+            flex-grow: 1;
+            margin: 10px 0 20px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #03001a;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%; /* Full width for consistency */
+            box-sizing: border-box;
+            margin-top: auto; /* Push button to the bottom */
+        }
+        .btn:hover {
+            background-color: #454545;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <i class="fa fa-magnifying-glass" style="font-size: 60px; color: #03001a;"></i>
+            <h2>Find Scholarships</h2>
+            <p>Over 1,000 scholarships and grants to finance the study of your dreams.</p>
+            <a href="uni.html" class="btn">Find your scholarships</a>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-comment-dollar" style="font-size: 70px; color: #03001a;"></i>
+            <h2>Write a Review About Us</h2>
+            <p>Your opinion matters and can inspire fellow students pursuing studies abroad. Be sure to share your experience!</p>
+            <a href="uni.html" class="btn">Review your University</a>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-right-to-bracket" style="font-size: 70px; color: #03001a;"></i>
+            <h2>Sign up to Your Profile</h2>
+            <p>Receive monthly emails right to your inbox with programmes that match your profile.</p>
+            <a href="loginform.html" class="btn">Subscribe Now</a>
+        </div>
+    </main>
+</body>
+</html>
