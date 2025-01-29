@@ -2,4 +2,4 @@
 
 
 
-Netlify: https://anilablinajeta.netlify.app/
+Netlify: https://anilablinajeta2025.netlify.app/
