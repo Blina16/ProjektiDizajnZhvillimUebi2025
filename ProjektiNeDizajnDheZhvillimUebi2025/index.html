@@ -162,7 +162,77 @@
       </div>
     </div>
   </section>
-  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Consistent Buttons Example</title>
+    <<---lidhja me font awseome---->>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+      <style>
+        <<---stilizimi me font per body--->>
+          body {
+              font-family: 'Arial', sans-serif;
+              margin: 0;
+              padding: 0;
+              background-photo: #18233a;
+          }
+        <<---dizajni i sesksionit kryesore ne main--->>
+          main {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 20px;
+              max-width: 1200px;
+              margin: 20px auto;
+              padding: 20px;
+          }
+        <<---dizajni i kutive--->>
+          .box {
+              background: white;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              padding: 20px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+          }
+          .box:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+          }
+          .box i {
+              margin-bottom: 20px;
+          }
+          .box h2 {
+              margin: 15px 0;
+              font-size: 1.5rem;
+          }
+          .box p {
+              flex-grow: 1;
+              margin: 10px 0 20px;
+              color: #555;
+          }
+        <<---dizajni i butonave--->>
+          .btn {
+              display: inline-block;
+              padding: 12px 20px;
+              background-color: #03001a;
+              color: white;
+              text-decoration: none;
+              border-radius: 4px;
+              font-weight: bold;
+              text-align: center;
+              width: 100%; /* Full width for consistency */
+              box-sizing: border-box;
+              margin-top: auto; /* Push button to the bottom */
+          }
+          .btn:hover {
+              background-color: #454545;
+          }
+      </style>
+  </head>
  
   
   <body>
