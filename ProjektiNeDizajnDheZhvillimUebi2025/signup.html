@@ -6,7 +6,91 @@
     <title>User Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-       
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-header h1 {
+            font-size: 30px;
+            color: #121b2f;
+            margin: 0;
+        }
+
+        .profile-details {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .profile-details p {
+            margin: 10px 0;
+        }
+
+        .profile-details span {
+            font-weight: bold;
+        }
+
+        .saved-universities {
+            margin-top: 30px;
+        }
+
+        .saved-universities h2 {
+            font-size: 24px;
+            color: #f5a425;
+            margin-bottom: 10px;
+        }
+
+        .university-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .university-list li {
+            font-size: 18px;
+            color: #555;
+            margin: 8px 0;
+        }
+
+        .university-list li a {
+            text-decoration: none;
+            color: #121b2f;
+            font-weight: bold;
+        }
+
+        .university-list li a:hover {
+            color: #f5a425;
+        }
+    </style>
+</head>
 <body>
     <div class="container">
         <!-- Profile Header -->
